@@ -36,7 +36,7 @@
 		D3581701198FB4D2009096B2 /* uapi-ip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uapi-ip.h"; sourceTree = "<group>"; };
 		D3B795AD1ABE58DE00CE2796 /* IONetworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IONetworkController.h; sourceTree = "<group>"; };
 		D3B795AE1ABE58DE00CE2796 /* IONetworkInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IONetworkInterface.h; sourceTree = "<group>"; };
-		D3B795BD1ABE590400CE2796 /* AtherosE2200Ethernet.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtherosE2200Ethernet.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3B795BD1ABE590400CE2796 /* AtherosE2200Ethernet-WOL.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AtherosE2200Ethernet-WOL.kext"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B795BF1ABE598F00CE2796 /* AtherosE2200EthernetV2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtherosE2200EthernetV2-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +63,7 @@
 		D3258570198482FF00C05A72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D3B795BD1ABE590400CE2796 /* AtherosE2200Ethernet.kext */,
+				D3B795BD1ABE590400CE2796 /* AtherosE2200Ethernet-WOL.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 			);
 			name = AtherosE2200EthernetV2;
 			productName = AtherosE2200Ethernet;
-			productReference = D3B795BD1ABE590400CE2796 /* AtherosE2200Ethernet.kext */;
+			productReference = D3B795BD1ABE590400CE2796 /* AtherosE2200Ethernet-WOL.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
@@ -363,10 +363,10 @@
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = "AtherosE2200Ethernet/AtherosE2200Ethernet-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULE_NAME = com.insanelymac.AtherosE2200Ethernet;
+				MODULE_NAME = "de.maaeps.AtherosE2200Ethernet-WOL";
 				MODULE_VERSION = 2.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.insanelymac.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = AtherosE2200Ethernet;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.maaeps.AtherosE2200Ethernet-WOL";
+				PRODUCT_NAME = "AtherosE2200Ethernet-WOL";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -382,10 +382,10 @@
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = "AtherosE2200Ethernet/AtherosE2200Ethernet-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULE_NAME = com.insanelymac.AtherosE2200Ethernet;
+				MODULE_NAME = "de.maaeps.AtherosE2200Ethernet-WOL";
 				MODULE_VERSION = 2.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.insanelymac.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = AtherosE2200Ethernet;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.maaeps.AtherosE2200Ethernet-WOL";
+				PRODUCT_NAME = "AtherosE2200Ethernet-WOL";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
