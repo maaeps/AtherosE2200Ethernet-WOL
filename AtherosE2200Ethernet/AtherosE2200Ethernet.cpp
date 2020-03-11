@@ -155,7 +155,7 @@ bool AtherosE2200::init(OSDictionary *properties)
         pciDeviceData.subsystem_device = 0;
         pciDeviceData.revision = 0;
         hw.pdev = &pciDeviceData;
-        wolCapable = false;
+        wolCapable = true;
         gbCapable = false;
         enableTSO4 = false;
         enableTSO6 = false;
@@ -1963,6 +1963,8 @@ bool AtherosE2200::alxStart(UInt32 maxIntrRate)
     
     eeeAdv = eeeCap;
     linkOpts = 0;
+    
+    setWakeOnMagicPacket(true);
 
     if (!alxResetPCIe())
         goto done;
